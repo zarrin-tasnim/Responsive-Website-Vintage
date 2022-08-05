@@ -1,3 +1,9 @@
+<?php
+
+include 'connect.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +18,8 @@
     <script src="https://kit.fontawesome.com/c4830dafcc.js" crossorigin="anonymous"></script>
 
     <!--Custom CSS -->
-    <link rel="stylesheet" href="./Assets/styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
 
 </head>
 
@@ -27,29 +34,34 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item ps-3 pe-4">
-                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                        <li class="nav-item ps-2 pe-2">
+                            <a class="nav-link active" aria-current="page" href="index.php" target="_blank">Home</a>
                         </li>
-                        <li class="nav-item pe-4">
-                            <a class="nav-link" href="service.php">Services</a>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="feature.php" target="_blank">Features</a>
                         </li>
-                        <li class="nav-item pe-4">
-                            <a class="nav-link" href="about.php
-                            ">About</a>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="about.php" target="_blank">About</a>
                         </li>
-                        <li class="nav-item pe-4">
-                            <a class="nav-link" href="contact.php">Contact</a>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="contact.php" target="_blank">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex p-3" role="search">
-                        <input class="form-control me-2  pe-4" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-danger ps-4" type="submit">Search</button>
-                    </form>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ps-3 pe-4">
+                            <a class="nav-link active" aria-current="page" href="login.php" target="_blank">Login </a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link" href="register.php" target="_blank">Register</a>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <!-- Carousal -->
         <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
             <div class="carousel-indicators">
@@ -60,13 +72,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="img-fluid" src="./Assets/images/book-cvr-1.jpg" class="d-block w-100" alt="book-covor-1">
+                    <img class="img-fluid" src="./Assets/images/book-cvr-3.jpg" class="d-block w-100" alt="book-covor-3">
                 </div>
                 <div class="carousel-item">
                     <img class="img-fluid" src="./Assets/images/book-cvr-2 .jpg" class="d-block w-100" alt="book-covor-2">
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="./Assets/images/book-cvr-3.jpg" class="d-block w-100" alt="book-covor-3">
+                    <img class="img-fluid" src="./Assets/images/book-cvr-1.jpg" class="d-block w-100" alt="book-covor-1">
                 </div>
                 <div class="carousel-item">
                     <img src="./Assets/images/book-cvr-4.jpg" class="d-block w-100" alt="book-covor-4">
@@ -89,13 +101,13 @@
                 <h1 class="text-center display-4">About Us</h1>
             </div>
             <div class="container-fluid">
-                <div class="row gx-2">
+                <div class="row gx-3">
                     <div class="col-lg-5 col-md-6 col-12">
-                        <img src="./Assets/images/about-us-1.jpg" class="img-fluid  about-image" alt="">
+                        <img src="./Assets/images/book-cvr-3.jpg" class="img-fluid  about-image" alt="">
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
                         <h2 class="display-5">About Vintage</h2>
-                        <p class="py-3 fs-4"> Vintage will help you get your book in front of more Amazon shoppers
+                        <p class="py-3 fs-5"> Vintage will help you get your book in front of more Amazon shoppers
                             so you can spend less time marketing and more time writing.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem magnam deleniti nobis voluptatem aut sed distinctio quis odit id aliquid!</p>
                         <a href="about.php" class="btn btn-success">Read more...</a>
                     </div>
@@ -119,35 +131,29 @@
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-12">
                         <div class="card h-100">
                             <img src="./Assets/images/services/service-3.jpg" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body pt-5 mt-2">
+                            <div class="card-body pt-3 mt-2">
                                 <h5 class="card-title">Buy Books</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-12">
                         <div class="card h-100">
-                            <img class="img-fluid" src="./Assets/images/services/service-2.png" class="card-img-top" alt="...">
+                            <img src="./Assets/images/services/service-2.png" class="card-img-top img-fluid" alt="...">
                             <div class="card-body pt-3">
                                 <h5 class="card-title">Delivery anywhere</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -212,41 +218,25 @@
         </section>
         <!-- Gallary end here -->
         <!-- Contact start here -->
-        <section class="gallary-area py-5 my-5">
+        <section class="Contct-area py-5 my-5">
             <!-- section title -->
             <div class="py-5">
-                <h1 class="text-center display-4 pb-4">Contact Us</h1>
+                <h1 class="text-center display-4 pb-4">Have any questions?</h1>
             </div>
-            <div class="container w-50 m-auto">
-                <form action="user-Info.php" method="post">
-                    <div class="form-group">
-                        <div class="mb-3">
-                            <label for="" class="form-label">User name</label>
-                            <input type="text" class="form-control" name="user" id="" autocomplete="off">
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Email address</label>
-                            <input type="email" class="form-control" name="email" id="" aria-describedby="emailHelp" autocomplete="off">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Mobile</label>
-                            <input type="number" class="form-control" name="mobile" id="" autocomplete="off">
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Password</label>
-                            <input type="password" class="form-control" name="password" id="">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-
+            <div class="container w-100 m-auto d-flex">
+                <img src="./Assets/images/services/service-1.jpg" class="img-fluid" alt="">
+                <div class="contct ms-5">
+                    <p>If you have any queries , Please, contact us.</p>
+                    <button class="btn btn-info"><a class="text-white" href="contact.php">Contact Us</a></button>
+                </div>
             </div>
         </section>
         <!-- Contact end here -->
+
+
         <!-- footer starts here -->
-        <footer>
-            <p class="p-3 bg-dark text-white text-center">@vintage.com</p>
+        <footer class="">
+            <p class="text-center text-white p-4 bg-dark">@Vintage.com</p>
         </footer>
         <!-- footer ends here -->
     </main>
